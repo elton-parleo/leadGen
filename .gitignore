@@ -1,5 +1,6 @@
 # Fable loop runtime state — regenerated, not source
 loop/memory/*
+!loop/memory/.gitkeep
 loop/work-order.json
 IMPLEMENTATION.md
 
