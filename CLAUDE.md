@@ -3,6 +3,7 @@
 ## NEVER (laws; exceptions require asking first)
 - Never exceed 200 changed lines in one commit without asking.
 - Never touch src/auth/, src/billing/, migrations/, or prod config unattended.
+- Never touch ../ or any sibling directory outside this repo, except the loop's own wt-* worktrees.
 - Never report work as done from your own assessment. Done = the check passed.
 - Never invent a secret, an endpoint, or a convention. Stop and ask.
 - Never add a dependency. Propose it in STATE.md and stop.

@@ -1,12 +1,7 @@
 # Fable loop runtime state — regenerated, not source
-memory/STATE.md
-memory/*.log
-memory/*.tsv
-work-order.json
+loop/memory/*
+loop/work-order.json
 IMPLEMENTATION.md
-
-# git worktrees the loop creates as siblings
-../wt-*
 
 # local env / secrets — NEVER commit these
 .env
