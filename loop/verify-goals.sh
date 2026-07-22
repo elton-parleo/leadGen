@@ -11,7 +11,7 @@ for g in goals/*.md; do
     sed -i.bak "s/^status:.*/status: satisfied/; s/^last-pass:.*/last-pass: $(date +%F)/" "$g"
   else r=FAIL; VIOLATIONS=$((VIOLATIONS+1)); sed -i.bak "s/^status:.*/status: VIOLATED/" "$g"; fi
   rm -f "$g.bak"
-  echo -e "$(date -Is)\t$name\t$r\t$(( $(date +%s) - start ))" >> "$LEDGER"
+  echo -e "$(date +%Y-%m-%dT%H:%M:%S%z)\t$name\t$r\t$(( $(date +%s) - start ))" >> "$LEDGER"
 done
 [ "$VIOLATIONS" -gt 0 ] && { grep -l '^status: VIOLATED' goals/*.md; exit 1; }
 echo "all standing goals hold"
